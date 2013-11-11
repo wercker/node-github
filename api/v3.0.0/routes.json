@@ -2369,7 +2369,7 @@
             }
         },
 
-        "watch": {
+        "watch2": {
             "url": "/user/watched/:user/:repo",
             "method": "PUT",
             "params": {

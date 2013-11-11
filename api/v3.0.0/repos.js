@@ -2220,7 +2220,7 @@ var repos = module.exports = {
     };
 
     /** section: github
-     *  repos#watch(msg, callback) -> null
+     *  repos#watch2(msg, callback) -> null
      *      - msg (Object): Object that contains the parameters and their values to be sent to the server.
      *      - callback (Function): function to call when the request is finished with an error as first argument and result data as second argument.
      * 
@@ -2230,7 +2230,7 @@ var repos = module.exports = {
      *  - user (String): Required. 
      *  - repo (String): Required. 
      **/
-    this.watch = function(msg, block, callback) {
+    this.watch2 = function(msg, block, callback) {
         var self = this;
         this.client.httpSend(msg, block, function(err, res) {
             if (err)

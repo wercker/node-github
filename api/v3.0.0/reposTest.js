@@ -759,7 +759,7 @@ describe("[repos]", function() {
     });
 
     it("should successfully execute PUT /user/starred/:user/:repo (watch)",  function(next) {
-        client.repos.watch(
+        client.repos.watch2(
             {
                 user: "String",
                 repo: "String"
@@ -848,7 +848,7 @@ describe("[repos]", function() {
     });
 
     it("should successfully execute PUT /user/watched/:user/:repo (watch)",  function(next) {
-        client.repos.watch(
+        client.repos.watch2(
             {
                 user: "String",
                 repo: "String"
